@@ -454,7 +454,7 @@ function time(callback) {
         }  
     });  
 
-    // project6
+    //project6
 
         $('.slider .next').on('click',function(){
            var activeItem = $('.slider .item.active')
