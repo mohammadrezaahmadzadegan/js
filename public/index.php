@@ -441,7 +441,7 @@ if (isset($_SESSION['message'])) {
         </div>
         </div>
     </section>
-    <section class="p12">
+    <section class="p12 ps">
         <div class="container">
             <div class="row">
                 <div class="col align-items-center justify-content-center d-flex flex-column shadow m-3 p-3">
@@ -497,41 +497,50 @@ if (isset($_SESSION['message'])) {
                                 <div class="col-2">
                                     <ul class="list-group">
                                         <li class="list-group-item">clear page</li>
-                                        <li class="list-group-item">
-
-                                            <input class="form-check" type="checkbox" id="cblack">
+                                        <li class="list-group-item ps">
+                                            <label class="switch">
+                                                <input class="form-check" type="checkbox" id="cblack">
+                                                <span class="toggle"></span>
+                                            </label>
                                         </li>
                                         <li class="list-group-item">size</li>
                                         <li class="list-group-item">
                                             <input class="form-control" type="text" id="wpencil">
                                         </li>
                                         <li class="list-group-item">pencil</li>
-                                        <li class="list-group-item">
+                                      
+                                        <li class="list-group-item ps">
+                                            <label class="switch">
                                             <input class="form-check" type="checkbox" id="pencil">
+                                                <span class="toggle"></span>
+                                            </label>
                                         </li>
                                         <li class="list-group-item">border radius</li>
                                         <li class="list-group-item">
                                             <input class="form-control" type="text" id="bpencil">
                                         </li>
                                         <li class="list-group-item">
-
-
-                                            <div class="mb-3">
-
-                                                <input type="color" id="colorp" class="form-control" value="#ff0000">
-                                            </div>
-
-
-
+                                            Pencil color
                                         </li>
                                         <li class="list-group-item">
-                                            <input class="form-check" type="checkbox" id="rpage">
+                                            <div class="mb-3">
+                                                <input type="color" id="colorp" class="form-control" value="#000000">
+                                            </div>
                                         </li>
+                                        <li class="list-group-item">
+                                            Background color
+                                        </li>
+                                        <li class="list-group-item">
+                                            <div class="mb-3">
+                                                <input type="color" id="bgcolor" class="form-control" value="#ffffff">
+                                            </div>
+                                        </li>
+
 
                                     </ul>
                                 </div>
                                 <div class="col-10">
-                     
+
                                 </div>
                             </div>
                         </div>

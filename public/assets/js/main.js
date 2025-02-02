@@ -631,8 +631,8 @@ $(document).ready(function () {
     $('.p13 .col').on('mousemove', function (event) {
         var circle = $('<span></span>');
         var size = Math.random() * 100 + 'px';
-        var x = event.pageX - $(this).offset().left;
-        var y = event.pageY - $(this).offset().top;
+        var x = event.pageX - $(this).offset().left
+        var y = event.pageY - $(this).offset().top
 
 
         circle.css({
@@ -642,7 +642,7 @@ $(document).ready(function () {
             'left': x,
         });
 
-        $(this).append(circle);
+        $(this).append(circle)
 
 
         setTimeout(function () {
@@ -662,8 +662,8 @@ $(document).ready(function () {
                 var w = ($('#wpencil').val()) ? $('#wpencil').val() : 20
                 var c = $('#colorp').val();
                 var b = $('#bpencil').val();
-                var x = event.pageX - $(this).offset().left;  
-                var y = event.pageY - $(this).offset().top;  
+                var x = event.pageX - $(this).offset().left 
+                var y = event.pageY - $(this).offset().top  
                 var circle = $('<span></span>');  
                 circle.css({  
                     'top': y,  
@@ -673,12 +673,20 @@ $(document).ready(function () {
                     'background': c,
                     'border-radius': b + '%'
                 });  
-                $(this).append(circle);  
+                $(this).append(circle)  
             }  
-      
-    });  
+           
+    })
+    $('#bgcolor').on('input',function(){
+        var bg = $('#bgcolor').val()
+        $('.p14 .col-10').css({
+            'background': bg
+        })
+    })
     
-  
+
+    
+    
     // end js
 })
 
