@@ -581,8 +581,6 @@ div#imgUpload img {
     overflow: hidden;
 }
 .p14 span{
-    width: 100px;
-    height: 100px;
     background: red;
     border-radius: 50%;
     position: absolute;

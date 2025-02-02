@@ -499,11 +499,11 @@ if (isset($_SESSION['message'])) {
                             <tr>
                                 <td>
                                     <label for="cblack">black</label>
-                                    <input type="checkbox" id="cblack">
+                                    <input class="form-check" type="checkbox" id="cblack">
                                 </td>
                                 <td>
                                 
-                                <input type="text" id="wpencil">
+                                <input class="form-control" type="text" id="wpencil">
                                 </td>
                             </tr>
                         </tbody>

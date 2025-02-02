@@ -665,13 +665,14 @@ $(document).ready(function () {
         var circle = $('<span></span>')
         var x = event.pageX - $(this).offset().left
         var y = event.pageY - $(this).offset().top
-        var w = $('#wpencil').on('input',function(){
-            console.log(w)
+        $('#wpencil').on('input',function(){
+            
         })
         circle.css({
             'top': y,
             'left': x,
-            'width': w
+            'width': w + 'px',
+            'height': w + 'px'
         })
         $(this).append(circle)
 
