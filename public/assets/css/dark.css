@@ -1,0 +1,15 @@
+.p12 .col {
+    background: #000;
+}
+
+.p12 h1 {
+    color: #ffffff;
+}
+
+.p12 .logo img.dark-mode-logo {
+    display: block;
+}
+
+.p12 .logo img.light-mode-logo {
+    display: none;
+}

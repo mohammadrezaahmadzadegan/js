@@ -6,7 +6,7 @@
 }
 
 body {
-    background: #f5f5f5 !important;
+    background: #f5f5f5;
     overflow-x: hidden;
     font-family: iranyekan;
 }
@@ -275,7 +275,8 @@ div#imgUpload img {
 }
 
 .slider img {
-    width: 100%;
+    width: 702px;
+    height: 387px;
     border: 2px solid #02025f;
     box-sizing: border-box;
 }
@@ -329,4 +330,260 @@ div#imgUpload img {
     height: 86px;
     cursor: pointer;
     transition: all 0.3s;
+}
+ 
+.form-group {
+    display: flex;
+    justify-content: center;
+    margin: 70px 0;
+}
+
+.p7 input {
+    font-size: 30px;
+    padding: 10px 20px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    outline: none;
+    border: 1px solid #02025f;
+    color: #02025f;
+}
+
+.p7 .copy-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 21px;
+    border: 1px solid #02025f;
+    border-radius: 0px 10px 10px 0;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.p7 .copyButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 21px;
+    border: 1px solid #02025f;
+    border-radius: 0px 10px 10px 0;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+.p7 .copy-button:hover {
+    background: #eeeeee;
+}
+
+.p7 p {
+    font-size: 30px;
+}
+.border-n{
+    border: 1px solid #02025f;
+    border-radius: 10px 0 0 10px;
+}
+
+
+.p8 .form-group {
+    display: flex;
+}
+
+.p8 input {
+    font-size: 30px;
+    padding: 10px 20px;
+    outline: none;
+    border: 1px solid #02025F;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    color: #02025F;
+}
+
+.p8 .show-password-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 21px;
+    border: 1px solid #02025F;
+    border-left: 0;
+    cursor: pointer;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    font-size: 26px;
+    transition: all 0.3s;
+}
+
+.p8 .show-password-button:hover {
+    background: #eeeeee;
+}
+.show-password-button2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 21px;
+    border: 1px solid #02025F;
+    border-left: 0;
+    cursor: pointer;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    font-size: 26px;
+    transition: all 0.3s;
+}
+.percent{
+    position: fixed;
+    background: #198754;
+    height: 5px; 
+    top: 0;
+    left: 0;
+}
+
+
+.titleH {
+    font-size: 50px;
+    color: #02025f;
+}
+
+.titleH span {
+    animation: showing 0.5s;
+}
+
+@keyframes showing {
+    0% {
+        font-size: 0;
+    }
+    100% {
+        font-size: 50px;
+    }
+}
+
+.p10 .col {
+    height: 300px !important;
+}
+
+.htitleH {
+    height: 100px !important;
+}
+.p11 .form-group {
+    display: flex;
+    margin-bottom: 15px;
+}
+
+.p11 input {
+    font-size: 30px;
+    padding: 10px 20px;
+    outline: none;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border: 1px solid #02025f;
+}
+
+.p11 .unit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #02025f;
+    border-left: none;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding: 15px 21px;
+    font-size: 26px;
+    background: rgba(238, 238, 238, 0.48);
+}
+
+.p12 img.dark-mode-logo {
+    display: none;
+}
+
+.p12 h1 {
+    transition: all 0.3s;
+}
+
+.p12 label.switch {
+    position: relative;
+    width: 80px;
+    height: 40px;
+    cursor: pointer;
+}
+
+.p12 input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.p12 .toggle {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: #dddddd;
+    transition: all 0.3s;
+}
+
+.p12 .toggle:before {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background: #ffffff;
+    top: 5px;
+    left: 5px;
+    transition: all 0.3s;
+}
+
+.p12 input:checked ~ .toggle {
+    background: #27dfd1;
+}
+
+.p12 input:checked ~ .toggle:before {
+    left: 45px;
+}
+.p12 .container1 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.p13 span{
+    position: absolute;
+    background: red;
+    border-radius: 50%;
+    animation: toTop 2s;
+}
+.p13 .col {
+    position: relative;
+    overflow: hidden;
+}
+@keyframes toTop {
+    0% {
+        transform: translateY(0);
+        opacity: 1;
+        filter: hue-rotate(0deg);
+    }
+    100% {
+        transform: translateY(-1000%);
+        opacity: 0;
+        filter: hue-rotate(360deg);
+    }
+}
+
+.container2 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+.p14 .col{
+    position: relative;
+    overflow: hidden;
+}
+.p14 span{
+    width: 100px;
+    height: 100px;
+    background: red;
+    border-radius: 50%;
+    position: absolute;
 }
