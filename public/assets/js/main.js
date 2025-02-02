@@ -685,8 +685,14 @@ $(document).ready(function () {
     })
     
 
-    
-    
+    // project15
+    $(window).on('scroll',function(){
+        var scrollTop = $(window).scrollTop()
+        $('.bg').css({
+            'background-position-x':scrollTop
+        })
+    })
+    // project16
     // end js
 })
 

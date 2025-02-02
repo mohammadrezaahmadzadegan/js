@@ -490,7 +490,7 @@ if (isset($_SESSION['message'])) {
                     <p class="text-center mt-3">project 14</p>
 
 
-                    <div class="container2">
+                    <div class="container2 shadow">
 
                         <div class="container p-0">
                             <div class="row">
@@ -551,8 +551,23 @@ if (isset($_SESSION['message'])) {
         </div>
         </div>
     </section>
+    <section class="p9">
+        <div class="container">
+            <div class="row">
+                <div class="col align-items-center justify-content-center d-flex shadow m-3 p-3">
+                    <div class="form-group d-flex flex-column justify-content-center align-items-center">
+                        <p class="text-center mt-3">project 15</p>
+                        <p>Background</p>
+                        <div class="bg"></div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        </div>
+    </section>
     <script src="assets/js/jquery-3.2.1.min.js"></script>
     <script src="assets/js/main.js"></script>
 </body>
 
-</html>
+</html> 
