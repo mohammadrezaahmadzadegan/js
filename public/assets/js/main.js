@@ -652,32 +652,33 @@ $(document).ready(function () {
     // project14
     $('#cblack').on('change', function () {
         if ($(this).prop('checked')) {
-            $('.p14 .col').css({
-                'background': 'black'
-            })
-        } else {
-            $('.p14 .col').css({
-                'background': 'white'
-            })
+            $('.p14 .col-10').empty()
         }
     })
-    $('.p14 .col').on('mousemove',function(event){
-        var circle = $('<span></span>')
-        var x = event.pageX - $(this).offset().left
-        var y = event.pageY - $(this).offset().top
-        $('#wpencil').on('input',function(){
-            
-        })
-        circle.css({
-            'top': y,
-            'left': x,
-            'width': w + 'px',
-            'height': w + 'px'
-        })
-        $(this).append(circle)
-
-    })
-
+    $('.p14 .col-10').on('mousemove', function (event) {  
+     
+            if ($('#pencil').is(':checked')) {  
+                 
+                var w = ($('#wpencil').val()) ? $('#wpencil').val() : 20
+                var c = $('#colorp').val();
+                var b = $('#bpencil').val();
+                var x = event.pageX - $(this).offset().left;  
+                var y = event.pageY - $(this).offset().top;  
+                var circle = $('<span></span>');  
+                circle.css({  
+                    'top': y,  
+                    'left': x,  
+                    'width': w + 'px',  
+                    'height': w + 'px',
+                    'background': c,
+                    'border-radius': b + '%'
+                });  
+                $(this).append(circle);  
+            }  
+      
+    });  
+    
+  
     // end js
 })
 

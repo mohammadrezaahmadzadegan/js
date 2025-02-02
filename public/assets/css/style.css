@@ -576,12 +576,20 @@ div#imgUpload img {
     justify-content: center;
     align-items: center;
 }
-.p14 .col{
+.p14 .col {
     position: relative;
     overflow: hidden;
 }
+.p14 .col-10{
+    position: relative;
+}
 .p14 span{
-    background: red;
-    border-radius: 50%;
     position: absolute;
+}
+.p14 .col-2 {
+    z-index: 2;
+    background: white;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15) !important;
+    padding: 0;
+    height: 100vh;
 }

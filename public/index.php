@@ -450,7 +450,7 @@ if (isset($_SESSION['message'])) {
 
                     <div class="container1">
                         <div class="logo">
-                      
+
                             <img src="images/dark-mode-logo.png" class="dark-mode-logo" alt="dark logo">
                             <img src="images/light-mode-logo.png" class="light-mode-logo" alt="light logo">
                         </div>
@@ -474,7 +474,7 @@ if (isset($_SESSION['message'])) {
                     <p class="text-center mt-3 text-white">project 13</p>
 
                     <div class="container1">
-                       
+
                     </div>
                 </div>
 
@@ -485,32 +485,56 @@ if (isset($_SESSION['message'])) {
     <section class="p14">
         <div class="container">
             <div class="row">
-                <div class="col align-items-center justify-content-center d-flex flex-column shadow m-3 p-3">
+                <div class="col align-items-center justify-content-center d-flex flex-column shadow m-3 p-0">
 
                     <p class="text-center mt-3">project 14</p>
-                    <table>
-                        <thead>
-                            <tr>
-                                <td>background color</td>
-                                <td>size</td>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>
-                                    <label for="cblack">black</label>
-                                    <input class="form-check" type="checkbox" id="cblack">
-                                </td>
-                                <td>
-                                
-                                <input class="form-control" type="text" id="wpencil">
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
+
+
                     <div class="container2">
-                        
-                       
+
+                        <div class="container p-0">
+                            <div class="row">
+                                <div class="col-2">
+                                    <ul class="list-group">
+                                        <li class="list-group-item">clear page</li>
+                                        <li class="list-group-item">
+
+                                            <input class="form-check" type="checkbox" id="cblack">
+                                        </li>
+                                        <li class="list-group-item">size</li>
+                                        <li class="list-group-item">
+                                            <input class="form-control" type="text" id="wpencil">
+                                        </li>
+                                        <li class="list-group-item">pencil</li>
+                                        <li class="list-group-item">
+                                            <input class="form-check" type="checkbox" id="pencil">
+                                        </li>
+                                        <li class="list-group-item">border radius</li>
+                                        <li class="list-group-item">
+                                            <input class="form-control" type="text" id="bpencil">
+                                        </li>
+                                        <li class="list-group-item">
+
+
+                                            <div class="mb-3">
+
+                                                <input type="color" id="colorp" class="form-control" value="#ff0000">
+                                            </div>
+
+
+
+                                        </li>
+                                        <li class="list-group-item">
+                                            <input class="form-check" type="checkbox" id="rpage">
+                                        </li>
+
+                                    </ul>
+                                </div>
+                                <div class="col-10">
+                     
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
