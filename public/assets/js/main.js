@@ -720,10 +720,8 @@ $(document).ready(function () {
             
         if(setNumber){
             clearInterval(setNumber)
-        }
-                
-                inputA()
-     
+        }         
+                inputA() 
     
     })
     
@@ -745,7 +743,30 @@ $(document).ready(function () {
         },1000) 
     }
  
+    // project18
+
+        let currentContentIndex = 0;  
+        const contents = $('section');  
+        
+     
+        loadNextContent();  
     
+      
+        $(window).on('scroll', function() {  
+            if ($(window).scrollTop() + $(window).height() >= $(document).height() - 100) {  
+                loadNextContent();  
+            }  
+        });  
+    
+      
+        function loadNextContent() {  
+            if (currentContentIndex < contents.length) {  
+                $(contents[currentContentIndex]).fadeIn();  
+                currentContentIndex++;  
+            }  
+        }  
+
+
     // end js
 })
 

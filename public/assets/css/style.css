@@ -656,3 +656,6 @@ div#imgUpload img {
         font-size: 50px;
     }
 }
+section {
+    display: none;
+}
