@@ -686,13 +686,66 @@ $(document).ready(function () {
     
 
     // project15
-    $(window).on('scroll',function(){
-        var scrollTop = $(window).scrollTop()
-        $('.bg').css({
-            'background-position-x':scrollTop
+    $('#bgmove').on('input',function(){
+        if($('#bgmove').is(':checked')){
+            $(window).on('scroll',function(){
+                var scrollTop = $(window).scrollTop()
+                $('.bg').css({
+                    'background-position-x':scrollTop
+                })
+            })
+        }else{
+            $(window).on('scroll',function(){
+                $('.bg').css({
+                    'background-position-x':0
+                })
+            })
+            
+        }
+    })
+   
+    
+
+    // project16
+    $('.comparison-slider').on('mousemove',function(event){
+        var x = event.pageX - $(this).offset().left
+        $('.front-layer').css({
+            'left': x + 'px'
         })
     })
-    // project16
+    // project17
+    var setNumber
+    inputA()
+    $('.number input').on('input',function(){
+            
+        if(setNumber){
+            clearInterval(setNumber)
+        }
+                
+                inputA()
+     
+    
+    })
+    
+    
+    function inputA(){
+        if(setNumber){
+            clearInterval(setNumber)
+        }
+        var numberN = ($('.number').find('input').val()) ? $('.number').find('input').val() : 2000
+        var spanN = $('.number').find('span')
+        var spanElement = spanN.text(numberN)
+        setNumber = setInterval(function(){
+            
+            if(spanElement.text() > 0){
+                spanElement.text(spanElement.text() - 1)
+            }else{
+                clearInterval(setNumber)
+            }
+        },1000) 
+    }
+ 
+    
     // end js
 })
 

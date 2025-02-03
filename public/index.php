@@ -508,10 +508,10 @@ if (isset($_SESSION['message'])) {
                                             <input class="form-control" type="text" id="wpencil">
                                         </li>
                                         <li class="list-group-item">pencil</li>
-                                      
+
                                         <li class="list-group-item ps">
                                             <label class="switch">
-                                            <input class="form-check" type="checkbox" id="pencil">
+                                                <input class="form-check" type="checkbox" id="pencil">
                                                 <span class="toggle"></span>
                                             </label>
                                         </li>
@@ -559,6 +559,47 @@ if (isset($_SESSION['message'])) {
                         <p class="text-center mt-3">project 15</p>
                         <p>Background</p>
                         <div class="bg"></div>
+                        <div class="ps">
+                            <label class="switch">
+                                <input class="form-check" type="checkbox" id="bgmove">
+                                <span class="toggle"></span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        </div>
+    </section>
+    <section class="p9">
+        <div class="container">
+            <div class="row">
+                <div class="col align-items-center justify-content-center d-flex shadow m-3 p-3">
+                    <div class="form-group d-flex flex-column justify-content-center align-items-center">
+                        <p class="text-center mt-3">project 16</p>
+
+                        <div class="comparison-slider">
+                            <div class="back-layer"></div>
+                            <div class="front-layer"></div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        </div>
+    </section>
+    <section class="p9">
+        <div class="container">
+            <div class="row">
+                <div class="col align-items-center justify-content-center d-flex shadow m-3 p-3">
+                    <div class="form-group d-flex flex-column justify-content-center align-items-center">
+                        <p class="text-center mt-3">project 17</p>
+                        <div class="number d-flex flex-column justify-content-center align-items-center">
+                            <input type="text" class="form-control">
+                            <span></span>
+                        </div>
                     </div>
                 </div>
 
@@ -570,4 +611,4 @@ if (isset($_SESSION['message'])) {
     <script src="assets/js/main.js"></script>
 </body>
 
-</html> 
+</html>

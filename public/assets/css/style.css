@@ -428,12 +428,13 @@ div#imgUpload img {
     font-size: 26px;
     transition: all 0.3s;
 }
-.percent{
+.percent {
     position: fixed;
     background: #198754;
-    height: 5px; 
+    height: 5px;
     top: 0;
     left: 0;
+    z-index: 5;
 }
 
 
@@ -609,4 +610,49 @@ div#imgUpload img {
 }
 .col {
     background: white;
+}
+
+.comparison-slider {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.back-layer {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url('../../images/isfahan-1.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.front-layer {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url('../../images/isfahan-2.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+.number {
+    font-size: 50px;
+    font-weight: bold;
+    color: #02025f;
+}
+
+.number span {
+    animation: showing 1s;
+}
+
+@keyframes showing {
+    0% {
+        font-size: 0;
+    }
+    100% {
+        font-size: 50px;
+    }
 }
